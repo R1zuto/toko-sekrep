@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Form Alamat</title>
+  <link rel="stylesheet" href="form jual.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>ALAMAT</h1>
+
+    <form>
+      <label for="nama">Nama Penerima:</label>
+      <input type="text" id="nama" name="nama" placeholder="" />
+
+      <label for="telepon">Nomor Telepon:</label>
+      <input type="tel" id="telepon" name="telepon" placeholder="" />
+
+      <label for="maps">Maps:</label>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126923.90632930296!2d115.1372203!3d-8.6724366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2470e14e8f2b3%3A0x3030bfbcaf770b0!2sBali!5e0!3m2!1sen!2sid!4v1719312345678"
+        width="600"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+
+      <label for="alamat">Alamat Lengkap:</label>
+      <input type="text" id="alamat" name="alamat" />
+
+      <label for="detail">Detail Lainnya (opsional):</label>
+      <input type="text" id="detail" name="detail" />
+
+      <div class="order-summary">
+        <div class="order-img">
+          <img src="baju3.png" alt="Baju" />
+        </div>
+        <div class="order-desc">
+          <p><strong>Baju</strong></p>
+          <p><strong>Rp. 50.000</strong></p>
+        </div>
+      </div>
+
+      <p><strong>Metode Pengiriman</strong></p>
+      <div class="shipping-methods">
+        <label>
+          <input type="radio" name="shipping" value="jne" />
+          <img src="Jne.png.jpeg" alt="JNE" />
+        </label>
+        <label>
+          <input type="radio" name="shipping" value="jnt" />
+          <img src="JnT.png.jpg" alt="J&T" />
+        </label>
+      </div>
+
+      <p><strong>Pilih Bank Yang Akan Digunakan</strong></p>
+      <div class="banks">
+        <label>
+          <input type="radio" name="bank" value="bni" />
+          <img src="bni.png.png" alt="BNI" />
+        </label>
+        <label>
+          <input type="radio" name="bank" value="bri" />
+          <img src="bri,png.jpeg" alt="BRI" />
+        </label>
+        <label>
+          <input type="radio" name="bank" value="mandiri" />
+          <img src="mandiri.png.png" alt="Mandiri" />
+        </label>
+      </div>
+<p><strong>Silahkan Scan</strong></p>
+            <div class="qr-section">
+              <img src="qr.png.jpg" alt="QR Code" class="qr-code" />
+            </div>
+          </form>
+    <button onclick="window.location.href='selesai.html'">Selesai</button>
+    <button onclick="window.location.href='index.html'">Batal Beli</button>
+  </div>
+</body>
+</html>
